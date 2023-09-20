@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Cliente </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+  </head>
+  <body>
+    <form action="Gracias, Su registro ha sido completado">
+      <h2>Registro</h2>
+      <div class="form-group fullname">
+        <label for="fullname">Nombre y Apellidos</label>
+        <input type="text" id="fullname" placeholder="Ingrese su Nombre y Apellido">
+      </div>
+      <div class="form-group email">
+        <label for="email">Email </label>
+        <input type="text" id="email" placeholder="Ingrese su direccion de email">
+      </div>
+      <div class="form-group password">
+        <label for="password">Contraseña</label>
+        <input type="password" id="password" placeholder="Ingrese una contraseña">
+        <i id="pass-toggle-btn" class="fa-solid fa-eye"></i>
+      </div>
+      <div class="form-group date">
+        <label for="date">Fecha de Nacimiento</label>
+        <input type="date" id="date" placeholder="Seleccione su fecha de nacimiento">
+      </div>
+      <div class="form-group gender">
+        <label for="gender">Genero</label>
+        <select id="gender">
+          <option value="" selected disabled>Seleccione su genero</option>
+          <option value="Male">Masculino</option>
+          <option value="Female">Femenino</option>
+          <option value="Other">Otros</option>
+        </select>
+      </div>
+      <div class="form-group submit-btn">
+        <input type="submit" value="Enviar">
+      </div>
+    </form>
+
+    <script src="script.js"></script>
+  </body>
+</html>
